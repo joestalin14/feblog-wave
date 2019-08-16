@@ -1,0 +1,74 @@
+.wave-block {
+    width: 94%;
+    margin-left: 3%;
+    position: relative;
+    overflow: hidden;
+    height: 450px;
+    background-image: url(wavebg.jpg);
+    background-size: cover;
+}
+.w-items {
+    opacity: .6; 
+}
+.wave-block .w-item {
+    float: left;
+    background-color: #002;
+    position: absolute;
+    bottom: 0;
+    transition: .9s ease;
+}
+#item1 {
+    height: 200px;
+    width: 20%;
+    left: 0;
+    border-top-left-radius: 60% 35%;
+    border-top-right-radius: 40% 15%;
+}
+#item2 {
+    height: 230px;
+    width: 30%;
+    left: 15%;
+    border-top-left-radius: 60% 35%;
+    border-top-right-radius: 40% 15%;
+}
+#item3 {
+    height: 260px;
+    width: 45%;
+    left: 40%;
+    border-top-left-radius: 60% 35%;
+    border-top-right-radius: 40% 15%;
+}
+#item4 {
+    height: 290px;
+    width: 40%;
+    left: 75%;
+    border-top-left-radius: 40% 35%;
+    border-top-right-radius: 60% 55%;
+}
+.wave-block:hover #item1, .wave-block:hover #item2, .wave-block:hover #item3, .wave-block:hover #item4 {
+    border-top-left-radius: 0 0;
+    border-top-right-radius: 0 0;
+    height: 150px;
+}
+@media (max-width: 992px) {
+    .wave-block {
+        height: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .wave-block {
+        height: 250px;
+    }
+    #item1 {
+        height: 120px;
+    }
+    #item2 {
+        height: 140px;
+    }
+    #item3 {
+        height: 160px;
+    }
+    #item4 {
+        height: 180px;
+    }
+}
